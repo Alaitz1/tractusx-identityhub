@@ -42,7 +42,9 @@ val edcVersion = libs.versions.edc
 
 allprojects {
     apply(plugin = "org.eclipse.edc.edc-build")
-
+    configurations.all {
+        exclude( group= "org.eclipse.edc", module = "identity-hub-keypairs")
+    }
     configure<org.eclipse.edc.plugins.edcbuild.extensions.BuildExtension> {
         pom {
             // this is actually important, so we can publish under the correct GID

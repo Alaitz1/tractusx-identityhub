@@ -33,6 +33,7 @@ dependencies {
     runtimeOnly(project(":extensions:store:sql:migrations"))
     runtimeOnly(project(":extensions:seed:super-user"))
     runtimeOnly(project(":extensions:monitor:colored-jdk-monitor"))
+    runtimeOnly(project(":extensions:pqc"))
     runtimeOnly(libs.postgres)
 
     // used for custom extensions

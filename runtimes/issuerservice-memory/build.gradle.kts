@@ -30,6 +30,7 @@ dependencies {
     runtimeOnly(libs.bom.issuer)
     runtimeOnly(project(":extensions:seed:super-user"))
     runtimeOnly(project(":extensions:monitor:colored-jdk-monitor"))
+    runtimeOnly(project(":extensions:pqc"))
 
     // used for custom extensions
     implementation(libs.edc.ih.spi)
